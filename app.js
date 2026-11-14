@@ -29,6 +29,14 @@ function setRoute(r){
 }
 $$('[data-route]').forEach(function(b){b.addEventListener('click',function(){setRoute(b.dataset.route)})});
 
+/* Ссылки на 2ГИС (обычные ссылки, без виджетов) */
+function maps(){
+  var c=$('#city').value,b='https://2gis.kz/'+(c?c+'/':'')+'search/';
+  $('#mapOpeka').href=b+encodeURIComponent('отдел образования');
+  $('#mapCourt').href=b+encodeURIComponent('суд по делам несовершеннолетних');
+}
+$('#city').addEventListener('change',maps);maps();
+
 /* Чек-лист */
 var N1='норма: ст. 22-1 ГК РК',UT='уточнить на месте';
 var DOCS={
