@@ -86,3 +86,5 @@ tbody th{background:var(--soft)}
 .help h2{margin:.75rem 0 .4rem;font-size:1.2rem;color:#fff}
 .help ul{padding-left:1.2rem;margin:.5rem 0}.help li{margin:.35rem 0}
 .help .small{font-size:.9rem;opacity:.9}
+.notice{background:var(--soft);border-bottom:1px solid var(--line);font-size:.95rem}
+.notice p{margin:0;padding:.6rem 0;max-width:none}
