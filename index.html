@@ -81,6 +81,16 @@
 <section id="steps" class="page">
   <h1>Пошаговая инструкция</h1>
   <p class="lead">Выберите путь. Если не знаете, какой ваш, пройдите проверку в разделе «Чек-лист».</p>
+  <fieldset class="q" id="why">
+    <legend>По какой причине вы хотите эмансипироваться?</legend>
+    <label><input type="radio" name="why" value="money"><span>Хочу сам заключать сделки и распоряжаться деньгами</span></label>
+    <label><input type="radio" name="why" value="biz"><span>Хочу заниматься предпринимательством</span></label>
+    <label><input type="radio" name="why" value="work"><span>Работаю и хочу оформить всё самостоятельно</span></label>
+    <label><input type="radio" name="why" value="family"><span>Хочу выйти из-под контроля родителей</span></label>
+    <label><input type="radio" name="why" value="other"><span>Другая причина или пока не знаю</span></label>
+  </fieldset>
+  <div id="whyOut" aria-live="polite"></div>
+
   <div class="seg" role="group" aria-label="Путь эмансипации">
     <button type="button" class="btn" data-route="guardian" aria-pressed="true">Через орган опеки (есть согласие)</button>
     <button type="button" class="btn" data-route="court" aria-pressed="false">Через суд (нет согласия)</button>
